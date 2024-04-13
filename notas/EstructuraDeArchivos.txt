@@ -1,0 +1,46 @@
+En esta practica dejaremos un primer acomodo de carpetas para proyectos iniciales,
+basandonos en python flask para aplicaciones Api/rest
+
+1.- Procederemos a crear primero el ambiente virtual, donde se gurardan las librerias de python
+con el comando "python -m virtualenv venv"
+
+en el primer intento salio un error el cual me dijo que no encontraba virtualenv por lo cual 
+procedimos a solo instalarlo con el getor de dependencias de python pip y el siguiente comando 
+
+"pip install virtualenv"
+
+una vez instalada la dependencia te dejara instalar la carpeta de ambiente virtual donde puedes entrar dedsde
+la teminar y ver su contenido con el comando ls 
+
+una vez creado es necesario activar el entorno virtual dentro del proyecto, para esto nos ayudaremos del siguiente comando:
+
+".\venv\Scripts\activate"
+
+si te presenta un error, en cual dice no se puede cargar el archivo tienes la polotica de ejecucion de scripts 
+en su maxima proteccion, checa en que nivel de proteccion estas con el siguiente comando:
+
+"Get-ExecutionPolicy"
+
+si la respuesta es Restricted, 
+Si la política de ejecución no permite la ejecución de scripts, puedes cambiarla a una política menos restrictiva. 
+Por ejemplo, puedes establecerla en RemoteSigned, que permite la ejecución de scripts descargados de Internet, pero 
+requiere que los scripts locales estén firmados digitalmente. Ejecuta el siguiente comando para cambiar la política:
+
+"Set-ExecutionPolicy RemoteSigned"
+
+una vez creado el ambiente virtual necesario y despues de activado, procedemos a registrar la siguientes carpetas:
+
+--scr(Sources)
+----database
+----routes
+----models
+----services
+----utils
+----test
+--.gitignore
+--README.md
+--.env(variables de ambiente)
+
+una vez creada la infrestuctura inicial de las carpetas, a la carpetas dentro de src se les agregara 
+un archivo python de inicializacion el cual sirve para tomarlas como un paquete de python por lo que creamos un 
+archivo en cada una de ellas menos en la carpeta de utils, un archivo con el nombre __init__.py
