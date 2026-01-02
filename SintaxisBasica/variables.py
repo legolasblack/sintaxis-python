@@ -22,4 +22,4 @@ print(type(bandera))
 5 diego True
 <class 'int'>
 <class 'str'>
-<class 'bool'>"""
+<class 'bool'> """
