@@ -23,6 +23,7 @@ while edad < 1 or edad > 120:
     """
     try:
         edad = int(input("Ingresa tu edad (1-120): "))
+        print(f"Has ingresado: {edad}")
     except ValueError:
         print("Debes ingresar un número válido")
         
@@ -43,3 +44,14 @@ while True:
     print(f"Suma actual: {suma}")
 
 print(f"Suma final: {suma}")
+
+#while con else
+print("\n=== Ejemplo 4: Bucle while con else ===")
+n = 1
+while n <= 5:
+    print(f"Número: {n}")
+    n += 1
+else:
+    print("El bucle ha terminado correctamente.")
+
+            
